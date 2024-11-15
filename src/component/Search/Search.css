@@ -1,0 +1,17 @@
+input::-webkit-search-cancel-button {
+  display: none;
+}
+p{
+  cursor: pointer;
+}
+
+li{
+  list-style: none;
+  color: #323232;
+}
+
+a{
+  font-size: 15px;
+}
+
+

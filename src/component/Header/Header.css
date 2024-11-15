@@ -1,0 +1,126 @@
+
+/* Header.css */
+.header {
+   /* Ensure the background is set to white */
+  height: 65vh;
+  margin: 30px auto;
+  background: url('./header_img.png' ) no-repeat ;
+  background-size: cover;  
+  background-position: center;
+  border-radius: 15px;
+  position: relative;
+}
+
+.header .header-container {
+  max-width: 50%;
+  background-color: transparent!important; 
+  display: flex !important;
+  flex-direction: column !important; 
+  align-items: start !important; 
+  position: absolute !important; 
+  gap: 1.5rem !important;
+  top: 190px;
+  left: 6vw !important;
+  animation: fadeIn 3s;
+}
+
+.header .header-container h2 {
+  font-size: 2.8rem !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+}
+
+.header .header-container p {
+  font-size: 1vw !important;
+  color: #fff !important;
+}
+
+.button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 1rem; /* Increased from 0.75rem */
+  padding-inline: 1rem; /* Decreased from 1.25rem */
+  background-color: rgb(247, 237, 237);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #000000;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button:hover .icon {
+  transform: translate(4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 80px; /* Decreased from 100px */
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -80px; /* Decreased from -100px */
+  opacity: 0.6;
+}
+
+
+
+
+@media (max-width: 1000px) {
+  .header{
+    height: 250px;
+    width: 100%;
+    position: relative;
+  }
+  .header .header-container .pp {
+    display: none !important;
+  }
+
+  .header .header-container h2,button {
+ display: none !important;
+}
+}
+/* 
+@media (max-width: 1500px) {
+  .header{
+    height: 360px;
+    width: 100%;
+    position: relative;
+  }
+  .header .header-container .pp {
+    display: none !important;
+  }
+
+  .header .header-container h2,button {
+ display: none !important;
+} 
+}
+ */

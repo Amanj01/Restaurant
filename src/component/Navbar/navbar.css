@@ -1,0 +1,164 @@
+.navbar{
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.navbar .logo{
+  width: 130px;
+}
+
+.navbar-menu{
+  display: flex;
+  list-style: none !important;
+  gap: 25px;
+  color: #49557e;
+  font-size: 20px !important;
+}
+
+.navbar-right{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar button{
+  background: transparent;
+  font-size: 16px;
+  color: #49557e;
+  border: 1px solid tomato !important;
+  border-radius: 50px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navbar button:hover{
+  background: tomato;
+  color: #fff;  
+}
+
+.navbar .active{
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+
+}
+
+.navbar li{
+  cursor: pointer;
+}
+
+.nav-search{
+  position: relative;
+}
+
+.nav-search .dot{
+  position: absolute;
+  min-height: 10px;
+  min-width: 10px;
+  background-color: tomato !important;
+  top: -8px;
+  right: -8px;
+  border-radius: 50%;
+}
+
+.nav-search .none{
+  display: none;
+}
+
+
+/* 
+@media (max-width: 1000px) {
+  .navbar .logo {
+    width: 70px;
+  }
+
+  .navbar-menu {
+    gap: 10px;
+    font-size: 14px !important;
+    padding: 0 10px;
+  }
+
+  .navbar-right {
+    gap: 10px;
+    font-size: 5px;
+  }
+
+  .navbar-right img {
+    width: 14px;
+  }
+
+  .navbar button {
+    padding: 4px 8px;
+    margin-left: 0px;
+  }
+
+
+  .animated-element {
+    transform: translateX(50px); 
+  }
+} */
+
+
+
+
+/*  @media (max-width: 900px) {
+  .navbar .logo {
+    width: 70px;
+  }
+
+  .navbar-menu {
+    gap: 8px;
+    font-size: 14px !important;
+    padding: 0 10px;
+  }
+
+  .navbar-right {
+    gap: 20px;
+    font-size: 3px;
+  }
+
+  .navbar-right img {
+    width: 18px;
+    padding: 0 -3px;
+
+  }
+
+  .navbar button {
+    padding: 4px 8px;
+    margin-left: -5px;
+    margin-right: 10px;
+   
+  }
+} 
+ @media (max-width: 1400px) {
+  .navbar .logo {
+    width: 140px;
+  }
+
+  .navbar-menu {
+    gap: 20px;
+    font-size: 30px !important;
+    padding: 0 10px;
+  }
+
+  .navbar-right {
+    gap: 20px;
+    font-size: 10px;
+  }
+
+  .navbar-right img {
+    width: 25px;
+    padding: 0 -3px;
+
+  }
+
+  .navbar button {
+    padding: 4px 8px;
+    margin-left: -5px;
+    margin-right: 10px;
+   
+  }
+} 
+ */
